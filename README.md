@@ -223,3 +223,11 @@ For better visual effects, appropriate Rviz display for `Obstacles` messages was
 Author:
 _Mateusz Przybyla_
 
+## 5. Launch Instructions
+
+A new launch file named "obstacle_detector.launch" has been created specifically to work with [a single 360 LIDAR](http://www.robotis.us/360-laser-distance-sensor-lds-01-lidar/).
+
+First clone and make the [repo](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver) to publish the scan data from the 360 lidar.
+
+launch `roslaunch hls_lfcd_lds_driver hlds_laser.launch`
+launch `roslaunch obstacle_detector obstacle_detector.launch`
